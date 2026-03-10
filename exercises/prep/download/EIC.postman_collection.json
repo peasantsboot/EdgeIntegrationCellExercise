@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "3b5e2b44-d331-42a1-80c2-b0f4a39437b2",
+		"name": "EIC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33477405"
+	},
+	"item": [
+		{
+			"name": "Exercise 1 - Replicate Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": \"dc3ea1c1-b4fb-4fa0-a83f-c6ae843b879c\",\r\n  \"orderId\":\"dabe136b-8efd-45de-a792-b73596af25f9\",\r\n  \"fulfillmentRequestId\": \"f876e666-ed01-4435-8ff2-8f3e8a276389\",\r\n  \"version\": 1,\r\n  \"orderNumber\": 456789,\r\n  \"precedingDocument\": null,\r\n  \"metadata\": {\r\n    \"createdAt\": \"2020-03-27T17:16:52.968Z\",\r\n    \"createdBy\": null,\r\n    \"changedAt\": \"2020-03-27T15:16:52.968Z\",\r\n    \"changedBy\": null\r\n  },\r\n  \"owner\": \"ruth@domain.com\",\r\n  \"market\": {\r\n    \"marketId\": \"A1\",\r\n    \"marketName\": \"US East\",\r\n    \"currency\": \"EUR\",\r\n    \"salesArea\": {\r\n      \"salesOrganization\": \"1710\",\r\n      \"distributionChannel\": \"10\",\r\n      \"division\": \"00\"\r\n    }\r\n  },\r\n  \"timeZone\": \"America/New_York\",\r\n  \"paymentData\": [\r\n    {\r\n      \"method\": \"Card\",\r\n      \"paymentCardToken\": \"as324dad333dddas22415ga\"\r\n    }\r\n  ],\r\n  \"customer\": {\r\n    \"customerNumber\": \"17100009\",\r\n    \"addresses\": [\r\n      {\r\n        \"street\": \"Billing Street\",\r\n        \"houseNumber\": \"1196\",\r\n        \"building\": \"buildBill-1\",\r\n        \"roomNumber\": \"11\",\r\n        \"floorNumber\": \"1\",\r\n        \"postalCode\": \"H1A 1H6\",\r\n        \"city\": \"Montreal\",\r\n        \"country\": \"CA\",\r\n        \"district\": \"bill2-district\",\r\n        \"state\": \"QC\",\r\n        \"phone\": \"5141112233\",\r\n        \"email\": \"Bill@Samplecustomer.Com\",\r\n        \"fax\": \"5141113344\",\r\n        \"additionalAddressInfo\": null,\r\n        \"correspondenceLanguage\": \"Fr\",\r\n        \"addressType\": \"BILL_TO\",\r\n        \"person\": {\r\n          \"firstName\": \"Bill\",\r\n          \"middleName\": \"MiddleBill\",\r\n          \"lastName\": \"LastNameBill\",\r\n          \"academicTitle\": \"Ms\"\r\n        },\r\n        \"pOBox\": \"1100\"\r\n      },\r\n      {\r\n        \"street\": \"Shipping Street\",\r\n        \"houseNumber\": \"2242\",\r\n        \"building\": \"ship-2\",\r\n        \"roomNumber\": \"22\",\r\n        \"floorNumber\": \"2\",\r\n        \"postalCode\": \"24152\",\r\n        \"city\": \"Chicago\",\r\n        \"country\": \"US\",\r\n        \"district\": \"ship2-district\",\r\n        \"state\": \"IL\",\r\n        \"phone\": \"2122223344\",\r\n        \"email\": \"Ship2@Samplecustomer.Com\",\r\n        \"fax\": \"2122224455\",\r\n        \"additionalAddressInfo\": \"test notes ship\",\r\n        \"correspondenceLanguage\": \"En\",\r\n        \"addressType\": \"SHIP_TO\",\r\n        \"person\": {\r\n          \"firstName\": \"Shipster\",\r\n          \"middleName\": \"MiddleShip\",\r\n          \"lastName\": \"LastNameShip\",\r\n          \"academicTitle\": \"Mr\"\r\n        },\r\n        \"pOBox\": \"abc\"\r\n      }\r\n    ]\r\n  },\r\n  \"description\": \"ruth's order\",\r\n  \"status\": \"RELEASED\",\r\n  \"priceType\": \"Net\",\r\n  \"customReferences\": [],\r\n  \"orderItems\": [\r\n    {\r\n      \"id\": \"4cd1629a-85be-41b4-b379-656288f25b21\",\r\n      \"lineNumber\": \"1\",\r\n      \"itemType\": \"physicalItem\",\r\n      \"quantity\": {\r\n        \"value\": 3,\r\n        \"unit\": \"PCE\"\r\n      },\r\n      \"product\": {\r\n        \"id\": \"e0981039-8298-464e-a8f0-32be92a8ba32\",\r\n        \"sourceSystemReference\": {\r\n          \"sourceSystemProductId\": \"TG11\"\r\n        }\r\n      },\r\n      \"customReferences\": [],\r\n      \"price\": {\r\n        \"aspectsData\": {\r\n          \"physicalItemPrice\": {\r\n            \"priceTotals\": [\r\n              {\r\n                \"priceCategory\": \"onetime\",\r\n                \"finalAmount\": 40.68\r\n              }\r\n            ]\r\n          }\r\n        }\r\n      },\r\n      \"aspectsData\": {\r\n        \"physicalItem\": {\r\n          \"scheduleLines\": [\r\n            {\r\n              \"deliverySource\": {\r\n                \"sourceId\": \"1710\",\r\n                \"sourceType\": \"STORE\",\r\n                \"sourceName\": \"Downtown\"\r\n              },\r\n              \"availableFrom\": \"2020-03-28T19:16:52.968Z\",\r\n              \"quantity\": {\r\n                \"unit\": \"PCE\",\r\n                \"value\": 3\r\n              }\r\n            }\r\n          ]\r\n        }\r\n      }\r\n    }\r\n  ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://suiteprivatecloud.sapintegrationsuite.de/http/s4onpremise/order_userXX",
+					"protocol": "https",
+					"host": [
+						"suiteprivatecloud",
+						"sapintegrationsuite",
+						"de"
+					],
+					"path": [
+						"http",
+						"s4onpremise",
+						"order_userXX"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Exercise 2 - Request Sales Order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://suiteprivatecloud.sapintegrationsuite.de/apiuserXX",
+					"protocol": "https",
+					"host": [
+						"suiteprivatecloud",
+						"sapintegrationsuite",
+						"de"
+					],
+					"path": [
+						"apiuserXX"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "49678bdf-17e9-49e3-acfb-566fd1ffe207$fQyWDkCysu-zx38Ho0qZeuCm8RXp5elSp0tp8Vlko5E=",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "sb-88e72008-6ed5-4ef9-9532-34dd3c81a538!b44358|it-rt-cpisuite-europe-03!b18631",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
