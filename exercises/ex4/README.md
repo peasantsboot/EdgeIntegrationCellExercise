@@ -125,12 +125,12 @@ Note: if you like to create the request on your own, simply create a new GET req
 
 User name:
 ```yaml 
-sb-3009327f-3dc1-4e3e-9853-5bd7c23e221d!b44358|it-rt-cpisuite-europe-03!b18631
+sb-88e72008-6ed5-4ef9-9532-34dd3c81a538!b44358|it-rt-cpisuite-europe-03!b18631
 ```
 
 Password:
 ```yaml 
-e507568e-892c-443f-a6ba-4d53f76fecac$wS5Kq2nV25PlNT-U8bh8Yd-HGoBZpO-XW7Za9X3URE0=
+49678bdf-17e9-49e3-acfb-566fd1ffe207$fQyWDkCysu-zx38Ho0qZeuCm8RXp5elSp0tp8Vlko5E=
 ```
 
 ![](/exercises/ex4/images/04_19_0010.png)
