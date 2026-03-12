@@ -283,17 +283,7 @@ Scroll down to proceed to the next exercise.
   ]
 }
 ```
-4. To authenticate to the Cloud Integration runtime, select **Basic Authentication** and maintain the credentials as follows.
-
-<br>User name =
-```yaml
-sb-88e72008-6ed5-4ef9-9532-34dd3c81a538!b44358|it-rt-cpisuite-europe-03!b18631
-```
-<br>Password = 
-```yaml 
-49678bdf-17e9-49e3-acfb-566fd1ffe207$fQyWDkCysu-zx38Ho0qZeuCm8RXp5elSp0tp8Vlko5E=
-```
-
+4. To authenticate to the Cloud Integration runtime, select **Basic Authentication** and maintain user and password provided by the instructor.
 5.	Trigger a message. Upon success, you will receive **200 OK** status as a response. Copy the **message ID** from the response **message** to the clipboard.
 6.	For monitoring the message in the message monitor of SAP Integration Suite, see steps 3 to 5 in [option 1](#option-1-using-bruno-api-client).
 
