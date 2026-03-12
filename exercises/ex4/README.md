@@ -121,17 +121,7 @@ Now that we have successfully deployed the API, it is time to test the API.
 
 1. Open the Bruno application on your laptop, expand the **Edge Integration Cell Exercises** collection and select the GET request **Exercise 2 - Request Sales Orders**. Paste the copied end point from the clipboard into the URL field or simply replace the **XX** in the URL with the id provided to you. Ensure that the **eu03** environment has been selected. Then trigger a message by selecting the **Send Request** button on the upper right.
 
-Note: if you like to create the request on your own, simply create a new GET request without any body, paste the copied end point from the clipboard into the URL field and maintain the credentials as follows:
-
-User name:
-```yaml 
-sb-88e72008-6ed5-4ef9-9532-34dd3c81a538!b44358|it-rt-cpisuite-europe-03!b18631
-```
-
-Password:
-```yaml 
-49678bdf-17e9-49e3-acfb-566fd1ffe207$fQyWDkCysu-zx38Ho0qZeuCm8RXp5elSp0tp8Vlko5E=
-```
+Note: if you like to create the request on your own, simply create a new GET request without any body, paste the copied end point from the clipboard into the URL field and maintain user and password provided by the instructor.
 
 ![](/exercises/ex4/images/04_19_0010.png)
 
