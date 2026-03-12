@@ -17,7 +17,7 @@ Import the provided collection if not already done.
 
 1. Open the SAP Integration Suite landing page, and navigate to **Design > Integrations and APIs**. Select the integration package **Edge Integration Cell Hands-on - Solution** and switch to tab **Documents**. From there you can download the Bruno collection.
 
-<br>![](/exercises/ex0/images/EIC_DownloadBruno.png)
+<br>![](/exercises/prep/images/EIC_DownloadBruno.png)
 
 2. Open Bruno and select **Import Collection** either from the menu or from the home screen.
 
